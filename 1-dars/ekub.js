@@ -1,11 +1,8 @@
-function nod(n, m) {
-      if(n>m){
-      var k = Math.abs(n%m);
-      }else{
-      var k = Math.abs(m%n);
-      }
-      
+ function ekub(a, b) {
+    if (!b) {
+      return a;
+    }
+  
+    return ekub(b, a % b);
   }
-
-
-console.log(nod(14,18))
+ module.exports=ekub
