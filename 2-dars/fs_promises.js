@@ -12,5 +12,5 @@ async function readFile(path){
     return data
 }
 readFile(Path.join(__dirname,'data','data.json')).then(data=>{
-    console.log(data)
+    console.log(data.argv)
 })
